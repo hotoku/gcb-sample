@@ -1,7 +1,7 @@
 .PHONY: run-local
 run-local: image
 	docker pull asia-northeast1-docker.pkg.dev/dor-ds-sandbox/gcb-sample/gcb-sample:tag1
-	docker run asia-northeast1-docker.pkg.dev/dor-ds-sandbox/gcb-sample/gcb-sample:tag1 -m gcb_sample
+	docker run asia-northeast1-docker.pkg.dev/dor-ds-sandbox/gcb-sample/gcb-sample:tag1 -m gcb_sample 30 1
 
 
 .PHONY: image
