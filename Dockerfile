@@ -13,6 +13,6 @@ COPY --from=builder /requirements.txt .
 
 RUN pip install -U pip && pip install -r requirements.txt
 
-COPY gcb_sample/ /
+COPY gcb_sample/ /gcb_sample
 
 ENTRYPOINT ["python"]
