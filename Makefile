@@ -12,3 +12,8 @@ image:
 .PHONY: repository
 repository:
 	gcloud artifacts repositories create gcb-sample --repository-format=docker --location=asia-northeast1 --description="Docker repository"
+
+
+.PHONY: run
+run:
+	cd run && gcloud builds submit --config cloudbuild.yaml --substitutions=_NUM_TASK=60
