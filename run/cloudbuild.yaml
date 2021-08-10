@@ -4,7 +4,7 @@ steps:
   args: ["-r", "/gcb_sample", "/workspace/"]
 
 - name: "asia-northeast1-docker.pkg.dev/$PROJECT_ID/gcb-sample/gcb-sample:tag1"
-  args: ["-m", "gcb_sample", "30", "1"]
+  args: ["-m", "gcb_sample", "$_NUM_TASK", "1"]
 
 options:
   machineType: "E2_HIGHCPU_32"
